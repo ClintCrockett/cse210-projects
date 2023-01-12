@@ -8,44 +8,51 @@ class Program
         string answer = Console.ReadLine();
         double percent = int.Parse(answer);
         
-        string value = "";
+        string letter = "";
 
         if (percent >= 90){
             if (percent <= 93){
-                value += "A";
+                letter += "A";
             }
             else{
-                value += "A-";
+                letter += "A-";
             }
-            Console.Write($"You currently have an {value} in the class.");
+            Console.Write($"You currently have an {letter} in the class.");
         }
         else if (percent >= 80){
             if (percent >= 87){
-                value += "B+";
+                letter += "B+";
             }
             else if (percent >= 83){
-                value += "B";
+                letter += "B";
             }
             else{
-                value += "B-";
+                letter += "B-";
             }
-            Console.Write($"You currently have a {value}");
+            Console.Write($"You currently have a {letter}");
         }
         else if (percent >= 70){
             if (percent >= 77){
-                value += "C+";
+                letter += "C+";
             }
             else if (percent >= 73){
-                value += "C";
+                letter += "C";
             }
             else{
-                value += "C-";
+                letter += "C-";
             }
-            Console.Write($"You currently have a {value}");
+            Console.Write($"You currently have a {letter}");
         }
         else{
-            value += "F";
-            Console.Write($"You currently have a {value}");
+            letter += "F";
+            Console.Write($"You currently have a {letter}");
         }
+        if (percent >= 70){
+            Console.Write($"\nYou passed!");
+        }
+        else {
+            Console.Write($"\nSorry but you did not pass.");
+        }
+        
     }
 }
