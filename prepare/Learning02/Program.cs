@@ -1,4 +1,5 @@
-// Jayton 
+// Name: Jayton Crockett
+// Date: Jan 18, 2023
 using System;
 
 class Program
