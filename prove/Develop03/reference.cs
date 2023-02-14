@@ -8,6 +8,7 @@ public class Reference{
     string js_reference = "";
 
     public void js_inputRef(string input){
+    //gets the reference for the desired scripture and puts it into useable variables
         int space = input.IndexOf(" ");
         int colon = input.IndexOf(":");
         int dash = input.IndexOf("-");
@@ -43,22 +44,27 @@ public class Reference{
     }
 
     public string getBook(){
+    //returns the book name
         return js_book;
     }
 
     public int getChapter(){
+    //returns the chapter number
         return js_chapter;
     }
 
     public int getSingleVerse(){
+    //returns verse if its a single verse
         return js_singleVerse;
     }
 
     public string getVerses(){
+    //returns verses if its multiple verses
         return js_verses;
     }
 
     public string getReference(){
+    //returns the whole reference
         return js_reference;
     }
 }
