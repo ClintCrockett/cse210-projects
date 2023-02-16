@@ -1,12 +1,34 @@
 //contains the text of the scripture and makes it look nice     ID 5 is the ID
 public class Scripture
 {
-    private string _scripture = "And God called the light Day, and the darkness he called Night. And the evening and the morning were the first day.";
+    private string _scripture;
 
-    public void Display(Reference reference)
+    public Scripture(string reference)
     {
-        string output = reference.getReference() + "\n" + _scripture;
-        Console.WriteLine(output);
+        // Open the CSV file
+        using (StreamReader sr = new StreamReader("lds-scripture-2020.12.08/csv"))
+        {
+            string line;
+            // Read each line of the file
+            while ((line = sr.ReadLine()) != null)
+            {
+                // Split the line into fields
+                string[] fields = line.Split(',');
+
+                // Check if the reference matches
+                if (fields[0] == reference)
+                {
+                    // Set the scripture text
+                    _scripture = fields[1];
+                    break;
+                }
+            }
+        }
+    }
+
+    public void Display()
+    {
+        // TODO: Implement hiding every third word
     }
 
     public string scriptureString()
@@ -14,6 +36,7 @@ public class Scripture
         return _scripture;
     }
 }
+
 
 
 

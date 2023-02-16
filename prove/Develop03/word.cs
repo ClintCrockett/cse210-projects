@@ -1,27 +1,27 @@
-//Splits the scripture into a list of words to be blanked out
-public class Word
+//Splits the scripture into a list of AR_words to be blanked out
+public class AR_Word
 {
-    List<string> words = new List<string>();
+    List<string> AR_words = new List<string>();
     int count = 0;
-    int hiddenWordsCount = 0;
+    int hiddenAR_WordsCount = 0;
 
-    public void SplitAndAddWords(string scriptureText)
+    public void SplitAndAddAR_Words(string scriptureText)
     {
-        string[] wordsArray = scriptureText.Split(' ');
-        foreach (string word in wordsArray)
+        string[] AR_wordsArray = scriptureText.Split(' ');
+        foreach (string AR_word in AR_wordsArray)
         {
-            words.Add(word);
+            AR_words.Add(AR_word);
         }
     }
 
     public string GetVisibleScripture()
     {
         string visibleScripture = "";
-        for (int i = 0; i < words.Count; i++)
+        for (int i = 0; i < AR_words.Count; i++)
         {
-            if ((i + 1) % 3 != 0 || words[i] == "___")
+            if ((i + 1) % 3 != 0 || AR_words[i] == "___")
             {
-                visibleScripture += words[i] + " ";
+                visibleScripture += AR_words[i] + " ";
             }
             else
             {
@@ -36,15 +36,15 @@ public class Word
         count++;
         if (count % 3 == 0)
         {
-            for (int i = 2; i < words.Count; i += 3)
+            for (int i = 2; i < AR_words.Count; i += 3)
             {
-                if (words[i] != "___")
+                if (AR_words[i] != "___")
                 {
-                    words[i] = "___";
-                    hiddenWordsCount++;
+                    AR_words[i] = "___";
+                    hiddenAR_WordsCount++;
                 }
             }
-            if (hiddenWordsCount == words.Count / 3)
+            if (hiddenAR_WordsCount == AR_words.Count / 3)
             {
                 return false;
             }
