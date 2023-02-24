@@ -1,4 +1,5 @@
-//contains the text of the scripture and makes it look nice     ID 5 is the ID
+//contains the text of the scripture and makes it look nice  
+// Austin Reeves
 public class Scripture
 {
     private string _scripture;
@@ -28,7 +29,7 @@ public class Scripture
 
     public void Display()
     {
-        // TODO: Implement hiding every third word
+    
     }
 
     public string scriptureString()

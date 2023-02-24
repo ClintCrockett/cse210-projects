@@ -1,6 +1,6 @@
 using System;
 
-using System;
+// Austin Reeves
 
 class Program
 {
@@ -13,10 +13,10 @@ class Program
             Console.Write("Enter a scripture reference (e.g. John 3:16): ");
             string reference = Console.ReadLine();
 
-            // Create a new Scripture object with the specified reference
+            // Create a new Scripture class with the reference
             Scripture scripture = new Scripture(reference);
 
-            // Display the scripture text
+    
             Console.WriteLine(scripture.scriptureString());
         }
     }

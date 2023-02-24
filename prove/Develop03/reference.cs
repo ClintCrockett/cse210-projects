@@ -1,5 +1,5 @@
 //Contains the reference to the scripture and makes it look nice
-//Jacob Strong
+//Jacob Strong Austin Reeves
 public class Reference{
     string js_book = "";
     int js_chapter = 0;

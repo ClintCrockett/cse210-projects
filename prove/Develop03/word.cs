@@ -1,11 +1,12 @@
 //Splits the scripture into a list of AR_words to be blanked out
+// Austin Reeves
 public class AR_Word
 {
     List<string> AR_words = new List<string>();
     int count = 0;
     int hiddenAR_WordsCount = 0;
 
-    public void SplitAndAddAR_Words(string scriptureText)
+    public void SplitAndAddWords(string scriptureText)
     {
         string[] AR_wordsArray = scriptureText.Split(' ');
         foreach (string AR_word in AR_wordsArray)
