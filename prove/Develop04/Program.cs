@@ -21,6 +21,7 @@ class Program
         else if (userInput == 3)
         {
             Listening listening = new Listening();
+            listening.displayActivity();
         }
         else
         {
