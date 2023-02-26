@@ -1,5 +1,5 @@
 using System;
-// Austin Reeves
+// Austin Reeves, Jacob Strong
 class Program
 {
     static void Main(string[] args)
@@ -16,6 +16,7 @@ class Program
         else if (userInput == 2)
         {
             Reflection reflection = new Reflection();
+            reflection.displayActivity();
         }
         else if (userInput == 3)
         {
