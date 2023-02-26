@@ -31,13 +31,13 @@ public class Reflection : Activity
     public void displayActivity()
     {
         Console.WriteLine(_description);
-        int do_main_prompt = 1;
+        int do_main_prompt = 5;
         Random random = new Random();
         DateTime end_time = DateTime.Now;
         end_time = end_time.AddSeconds(_duration);
         DateTime now = DateTime.Now;
         while(now < end_time){
-            if(do_main_prompt == 1){
+            if(do_main_prompt == 5){
                 int prompt_index = random.Next(0, 3);
                 Console.WriteLine(main_prompt[prompt_index]);
                 do_main_prompt = 0;
@@ -111,6 +111,7 @@ public class Reflection : Activity
             Console.WriteLine();
 
             now = DateTime.Now;
+        
         }
         Console.WriteLine(_finishingMessage);
         Console.WriteLine("You did the reflection activity for "+_duration+" seconds");
