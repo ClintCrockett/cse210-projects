@@ -42,36 +42,17 @@ class Program
 
                 if (goalType == 1)
                 {
-                    string goalName = "";
-                    Console.Write("What is the name of your goal? ");
-                    goalName = Console.ReadLine();
-
-                    string goalDescription = "";
-                    Console.Write("What is a short description of your goal? ");
-                    goalDescription = Console.ReadLine();
-           
+                    
                 }
 
                 if (goalType == 2)
                 {
-                    string goalName = "";
-                    Console.Write("What is the name of your goal? ");
-                    goalName = Console.ReadLine();
-
-                    string goalDescription = "";
-                    Console.Write("What is a short description of your goal? ");
-                    goalDescription = Console.ReadLine();
+               
                 }
 
                 if (goalType == 3)
                 {
-                    string goalName = "";
-                    Console.Write("What is the name of your goal? ");
-                    goalName = Console.ReadLine();
-
-                    string goalDescription = "";
-                    Console.Write("What is a short description of your goal? ");
-                    goalDescription = Console.ReadLine();
+           
                 }
             }
 

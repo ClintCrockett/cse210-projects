@@ -7,7 +7,7 @@ public class Load
 
     
     public void _load(List<Entry> entries){
-        Console.WriteLine("Please entry your file name: ");
+        Console.WriteLine("Please enter your file name: ");
         string filename = Console.ReadLine();
         string[] lines = System.IO.File.ReadAllLines(filename);
 
