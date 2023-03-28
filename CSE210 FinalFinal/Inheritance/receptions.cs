@@ -7,12 +7,17 @@ public class Receptions : Event
 
     public void getFullDetails()
     {
-        Console.WriteLine($"{_title}/n {_description}/n {_date}/n {_time}/n {_address} /n {_RSVPemail}");
+        Console.WriteLine("");
+        getStandardDetails();
+        Console.WriteLine($"The RSVP email is {_RSVPemail}");
+        Console.WriteLine("Full details ^^");
+        Console.WriteLine("");
     }
+
 
     public void getShortDescription()
     {
-        Console.WriteLine($"The event is a Reception, its title is {_title}, and is on {_date}");
+        Console.WriteLine($"The event is a Reception, called {_title}, and is on {_date}");
     }
 
     public Receptions()

@@ -1,17 +1,17 @@
 using System;
 
-class Address
+public class Address
 {
 
-    private string AR_street;
+    private string AR_street_address;
     private string AR_city;
     private string AR_state;
     private string AR_country;
 
     public Address()
     {
-        Console.WriteLine("What is your street?");
-        AR_street = Console.ReadLine();
+        Console.WriteLine("What is your street address?");
+        AR_street_address = Console.ReadLine();
 
         Console.WriteLine("What is your City?");
         AR_city = Console.ReadLine();
@@ -27,6 +27,7 @@ class Address
     public string fulladdress()
     {
 
-        return $"{AR_street}\n {AR_city}, {AR_state} {AR_country}";
+        return $"{AR_street_address} {AR_city}, {AR_state} {AR_country}";
     }
+
 }

@@ -13,8 +13,9 @@ public class Event
 
     public void getStandardDetails()
     {
-        Console.WriteLine($"{_title}/n {_description}/n {_date}/n {_time}/n {_address}");
+        Console.WriteLine($"{_title}\n{_description}\n{_date}\n{_time}\n{_address.fulladdress()}");
     }
+
 
 
 
