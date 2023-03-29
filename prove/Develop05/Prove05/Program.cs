@@ -40,29 +40,13 @@ class Program
                 saveload._load(list.MenuList);
             }
 
-            else if (userinput == "5")
-            {
+            else if (userinput == "5"){
                 list.DisplayGoals();
                 Console.Write("which one?");
-                string choiceString = Console.ReadLine();
-                if (int.TryParse(choiceString, out int choice))
-                {
-                    list.totalPoint += list.MenuList[choice - 1].CompletedGoals();
-                    Console.WriteLine($"You have {list.totalPoint} points");
-                }
-                else
-                {
-                    Console.WriteLine("Invalid input. Please enter a valid number.");
-                }
+                string choice = Console.ReadLine();
+                list.totalPoint += list.MenuList[int.Parse(choice)-1].CompletedGoals();
+                Console.WriteLine($"You have {list.totalPoint} points");
             }
-
-            // else if (userinput == "5"){
-            //     list.DisplayGoals();
-            //     Console.Write("which one?");
-            //     string choice = Console.ReadLine();
-            //     list.totalPoint += list.MenuList[int.Parse(choice)-1].CompletedGoals();
-            //     Console.WriteLine($"You have {list.totalPoint} points");
-            // }
         }
     }
 }
