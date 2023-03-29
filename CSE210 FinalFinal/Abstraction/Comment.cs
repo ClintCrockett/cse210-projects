@@ -24,12 +24,12 @@ public class Comment
 
     public void comment()
     {
-        _userName = usernames[(new Random().Next(usernames.Count))];
-        _comment = comments[new Random().Next(comments.Count)];
+        AR_userName = usernames[(new Random().Next(usernames.Count))];
+        AR_comment = comments[new Random().Next(comments.Count)];
     }
 
     public void Display()
     {
-        Console.WriteLine($"A comment by {_userName} says {_comment}");
+        Console.WriteLine($"A comment by {AR_userName} says {AR_comment}");
     }
 }

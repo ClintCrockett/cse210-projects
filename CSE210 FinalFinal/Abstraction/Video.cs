@@ -33,9 +33,9 @@ public class Video
 
     public void videosMethod()
     {
-        _title = titles[(new Random().Next(titles.Count))];
-        _actor = actors[new Random().Next(actors.Count)];
-        _length = lengths[new Random().Next(lengths.Count)];
+        AR_title = titles[(new Random().Next(titles.Count))];
+        AR_actor = actors[new Random().Next(actors.Count)];
+        AR_length = lengths[new Random().Next(lengths.Count)];
 
         for (int i = 0; i < 4; i++)
         {
@@ -52,7 +52,7 @@ public class Video
 
     public void Display()
     {
-        Console.WriteLine($"The video title is {_title}, which was made by {_actor}, the video is {_length} minutes long");
+        Console.WriteLine($"The video title is {AR_title}, which was made by {AR_actor}, the video is {AR_length} minutes long");
         Console.WriteLine($"There are {getCommentsQuantity()} comments");
 
         Console.WriteLine("Comments:");
