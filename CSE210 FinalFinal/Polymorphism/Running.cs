@@ -2,29 +2,29 @@ using System;
 
 public class Running : Activity
 {
-    protected float _distance = 1;
+    protected float AR_distance = 1;
 
     public Running()
     {
-        _date = DateTime.Now;
+        AR_date = DateTime.Now;
 
         Console.WriteLine("How far did you run(miles) ");
-        _distance = Convert.ToInt16(Console.ReadLine());
+        AR_distance = Convert.ToInt16(Console.ReadLine());
 
-        _activityType = "Running";
+        AR_activityType = "Running";
 
         Console.WriteLine("How long did you run for?(minutes) ");
-        _length = Convert.ToInt16(Console.ReadLine());
+        AR_length = Convert.ToInt16(Console.ReadLine());
 
     }       
 
     public override float computeDistance()
     {
-        return _distance;
+        return AR_distance;
     }
     public override float computeSpeed()
     {
-        return _distance / _length * 60;
+        return AR_distance / AR_length * 60;
     }
 
 

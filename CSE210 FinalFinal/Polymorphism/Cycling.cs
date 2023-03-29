@@ -2,27 +2,27 @@ using System;
 
 public class Cycling : Activity {
 
-    protected float _speed = 1;
+    protected float AR_speed = 1;
 
     public Cycling(){
 
-        _date = DateTime.Now;
+        AR_date = DateTime.Now;
 
         Console.WriteLine("How fast did you bike?(mph) ");
-        _speed = Convert.ToInt16(Console.ReadLine());
+        AR_speed = Convert.ToInt16(Console.ReadLine());
 
-        _activityType = "Cycling";
+        AR_activityType = "Cycling";
 
         Console.WriteLine("How long did you cycle for?(minutes) ");
-        _length = Convert.ToInt16(Console.ReadLine());
+        AR_length = Convert.ToInt16(Console.ReadLine());
 
     }
 
     public override float computeDistance(){
-        return _speed / 60 * _length;
+        return AR_speed / 60 * AR_length;
     }
     public override float computeSpeed(){
-        return _speed;
+        return AR_speed;
     }
 
 }

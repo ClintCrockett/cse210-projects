@@ -3,10 +3,10 @@ using System;
 public abstract class Activity
 {
 
-    protected DateTime _date;
-    protected int _length = 1;
-    protected string _activityType = "";
-    protected float _pace = 1;
+    protected DateTime AR_date;
+    protected int AR_length = 1;
+    protected string AR_activityType = "";
+    protected float AR_pace = 1;
 
 
     public abstract float computeDistance();
@@ -15,12 +15,12 @@ public abstract class Activity
 
     public float computePace()
     {
-        return _length / computeDistance();
+        return AR_length / computeDistance();
     }
 
     public virtual void getSummary()
     {
-        Console.WriteLine($"{_date} - {_activityType} For {_length} Minutes - Distance: {computeDistance()} Miles - {computeSpeed()} MPH - {computePace()} Minutes per mile avg pace");
+        Console.WriteLine($"{AR_date} - {AR_activityType} For {AR_length} Minutes - Distance: {computeDistance()} Miles - {computeSpeed()} MPH - {computePace()} Minutes per mile avg pace");
     }
 
 
