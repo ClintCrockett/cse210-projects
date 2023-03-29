@@ -4,16 +4,16 @@ using System;
 public class Event
 {
 
-    protected string _title = "";
-    protected string _description = "";
-    protected string _date = "";
-    protected string _time = "";
+    protected string AR_title = "";
+    protected string AR_description = "";
+    protected string AR_date = "";
+    protected string AR_time = "";
     protected Address _address;
 
 
     public void getStandardDetails()
     {
-        Console.WriteLine($"{_title}\n{_description}\n{_date}\n{_time}\n{_address.fulladdress()}");
+        Console.WriteLine($"{AR_title}\n{AR_description}\n{AR_date}\n{AR_time}\n{_address.fulladdress()}");
     }
 
 

@@ -3,13 +3,13 @@ using System;
 
 public class Receptions : Event
 {
-    protected string _RSVPemail = "";
+    protected string AR_RSVPemail = "";
 
     public void getFullDetails()
     {
         Console.WriteLine("");
         getStandardDetails();
-        Console.WriteLine($"The RSVP email is {_RSVPemail}");
+        Console.WriteLine($"The RSVP email is {AR_RSVPemail}");
         Console.WriteLine("Full details ^^");
         Console.WriteLine("");
     }
@@ -17,26 +17,26 @@ public class Receptions : Event
 
     public void getShortDescription()
     {
-        Console.WriteLine($"The event is a Reception, called {_title}, and is on {_date}");
+        Console.WriteLine($"The event is a Reception, called {AR_title}, and is on {AR_date}");
     }
 
     public Receptions()
     {
         _address = new Address();
         Console.WriteLine("Event title");
-        _title = Console.ReadLine();
+        AR_title = Console.ReadLine();
 
         Console.WriteLine("Event description");
-        _description = Console.ReadLine();
+        AR_description = Console.ReadLine();
 
         Console.WriteLine("Event date");
-        _date = Console.ReadLine();
+        AR_date = Console.ReadLine();
 
         Console.WriteLine("Event time");
-        _time = Console.ReadLine();
+        AR_time = Console.ReadLine();
 
         Console.WriteLine("RSVP email");
-        _RSVPemail = Console.ReadLine();
+        AR_RSVPemail = Console.ReadLine();
 
 
     }
