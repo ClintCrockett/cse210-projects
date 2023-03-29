@@ -16,7 +16,7 @@ public class Running : Activity
         Console.WriteLine("How long did you run for?(minutes) ");
         _length = Convert.ToInt16(Console.ReadLine());
 
-    }
+    }       
 
     public override float computeDistance()
     {

@@ -9,11 +9,6 @@ public abstract class Activity
     protected float _pace = 1;
 
 
-    public Activity()
-    {
-
-    }
-
     public abstract float computeDistance();
 
     public abstract float computeSpeed();
